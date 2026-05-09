@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok - Les Connecteurs Révolutionnaires</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(100,200,255,0.15) 0%, transparent 70%);
+            animation: pulse 15s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .logo {
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+        .tagline {
+            font-size: 1.8rem;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+        }
+        .highlight {
+            color: #00ddff;
+            font-weight: 600;
+        }
+        .section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #111;
+            border-radius: 16px;
+            padding: 40px 30px;
+            border: 1px solid #222;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00ddff;
+            box-shadow: 0 20px 40px rgba(0, 221, 255, 0.1);
+        }
+        h1, h2 {
+            font-weight: 700;
+        }
+        .btn {
+            display: inline-block;
+            background: #00ddff;
+            color: #000;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #ffffff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="logo">GROK</div>
+        <h1>Les <span class="highlight">Connecteurs</span> sont arrivés !</h1>
+        <p class="tagline">Accédez à vos outils et données directement dans la conversation.</p>
+        <a href="#features" class="btn">Découvrir les Connecteurs</a>
+    </header>
+
+    <section class="section" id="features">
+        <h2 style="text-align:center; font-size:2.8rem; margin-bottom:60px;">Une nouvelle ère de productivité</h2>
+        <div class="features">
+            <div class="card">
+                <h3>🔗 Connectez vos apps</h3>
+                <p>GitHub, Notion, Google Workspace, Slack, Linear et bien plus encore.</p>
+            </div>
+            <div class="card">
+                <h3>📧 Cherchez dans vos emails</h3>
+                <p>Grok peut maintenant accéder à vos emails en toute sécurité.</p>
+            </div>
+            <div class="card">
+                <h3>📅 Calendrier & Fichiers</h3>
+                <p>Consultez votre agenda et parcourez vos fichiers cloud sans quitter le chat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background:#0a0a0a;">
+        <h2 style="text-align:center; font-size:2.5rem;">Comment ça marche ?</h2>
+        <ol style="max-width:700px; margin:40px auto; font-size:1.2rem;">
+            <li>Activez un connecteur dans les paramètres Grok</li>
+            <li>Autorisez l'accès en toute sécurité</li>
+            <li>Posez vos questions : Grok va chercher les infos pour vous !</li>
+        </ol>
+    </section>
+
+    <footer style="text-align:center; padding:60px 20px; background:#000; color:#666;">
+        <p>Fait avec ❤️ pour explorer les nouveautés de Grok par xAI</p>
+        <p style="margin-top:20px;"><a href="https://grok.x.ai" style="color:#00ddff;">grok.x.ai</a></p>
+    </footer>
+</body>
+</html>
