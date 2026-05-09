@@ -71,6 +71,23 @@
             border-color: #00ddff;
             box-shadow: 0 20px 40px rgba(0, 221, 255, 0.1);
         }
+        .connector-card {
+            background: #1a1a1a;
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid #222;
+            transition: all 0.3s;
+        }
+        .connector-card:hover {
+            transform: translateY(-8px);
+            border-color: #00ddff;
+        }
+        .connectors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+        }
         h1, h2 {
             font-weight: 700;
         }
@@ -103,16 +120,63 @@
         <h2 style="text-align:center; font-size:2.8rem; margin-bottom:60px;">Une nouvelle ère de productivité</h2>
         <div class="features">
             <div class="card">
-                <h3>🔗 Connectez vos apps</h3>
+                <h3>Connectez vos apps</h3>
                 <p>GitHub, Notion, Google Workspace, Slack, Linear et bien plus encore.</p>
             </div>
             <div class="card">
-                <h3>📧 Cherchez dans vos emails</h3>
+                <h3>Cherchez dans vos emails</h3>
                 <p>Grok peut maintenant accéder à vos emails en toute sécurité.</p>
             </div>
             <div class="card">
-                <h3>📅 Calendrier & Fichiers</h3>
+                <h3>Calendrier &amp; Fichiers</h3>
                 <p>Consultez votre agenda et parcourez vos fichiers cloud sans quitter le chat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOUVEAU : Section des connecteurs avec icônes officielles -->
+    <section class="section" id="connecteurs" style="background:#111111;">
+        <h2 style="text-align:center; font-size:2.8rem; margin-bottom:60px;">Tous les nouveaux connecteurs Grok</h2>
+        <div class="connectors-grid" style="max-width:1100px; margin:0 auto;">
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/github/00ddff" alt="GitHub" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">GitHub</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Code, issues &amp; repositories</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/notion/00ddff" alt="Notion" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Notion</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Notes &amp; bases de données</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/slack/00ddff" alt="Slack" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Slack</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Messages d’équipe</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/linear/00ddff" alt="Linear" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Linear</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Gestion de projets</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/googledrive/00ddff" alt="Google Drive" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Google Drive</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Stockage de fichiers</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/gmail/00ddff" alt="Gmail" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Gmail</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Emails Google</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/googlecalendar/00ddff" alt="Google Calendar" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Google Calendar</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Agenda &amp; événements</p>
+            </div>
+            <div class="connector-card">
+                <img src="https://cdn.simpleicons.org/microsoftoutlook/00ddff" alt="Outlook" style="width:80px;height:80px;margin-bottom:15px;">
+                <h3 style="margin:10px 0;color:#00ddff;">Outlook</h3>
+                <p style="color:#aaa;font-size:0.95rem;">Emails Microsoft</p>
             </div>
         </div>
     </section>
@@ -121,7 +185,7 @@
         <h2 style="text-align:center; font-size:2.5rem;">Comment ça marche ?</h2>
         <ol style="max-width:700px; margin:40px auto; font-size:1.2rem;">
             <li>Activez un connecteur dans les paramètres Grok</li>
-            <li>Autorisez l'accès en toute sécurité</li>
+            <li>Autorisez l’accès en toute sécurité</li>
             <li>Posez vos questions : Grok va chercher les infos pour vous !</li>
         </ol>
     </section>
